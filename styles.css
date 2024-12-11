@@ -192,16 +192,16 @@ header nav a:hover {
 .about-image::before {
   content: "";
   display: block;
-  width: 150px; /* Adjust width as needed */
-  height: 5px; /* Thickness of the line */
+  width: 150px;
+  height: 5px;
   border-radius: 5px;
-  background-color: #00ffff; /* Line color */
-  margin: 0px auto 20px auto; /* Center align and add spacing */
+  background-color: #00ffff;
+  margin: 0px auto 20px auto;
 }
 
 .skills {
-  background-color: #121212; /* Dark background */
-  color: #fff; /* White text */
+  background-color: #121212;
+  color: #fff;
   padding: 80px 80px;
   text-align: center;
 }
@@ -214,7 +214,7 @@ header nav a:hover {
 .skills p {
   font-size: 1rem;
   margin-bottom: 30px;
-  color: #aaa; /* Subtle text color */
+  color: #aaa;
 }
 
 .skills-grid {
@@ -227,7 +227,7 @@ header nav a:hover {
 }
 
 .skill {
-  flex: 1 1 45%; /* Adjust width for 2 columns */
+  flex: 1 1 45%;
   text-align: left;
 }
 
@@ -246,7 +246,7 @@ header nav a:hover {
 }
 
 .progress {
-  background-color: #00ffff; /* Green progress */
+  background-color: #00ffff;
   height: 100%;
   border-radius: 10px;
   transition: width 0.3s ease;
@@ -256,7 +256,7 @@ header nav a:hover {
   display: inline-block;
   margin-top: 5px;
   font-size: 0.9rem;
-  color: #00ffff; /* Accent color */
+  color: #00ffff;
 }
 
 .social-icons img {
@@ -265,9 +265,11 @@ header nav a:hover {
   margin: 0 0px;
   transition: transform 0.3s ease;
 }
+
 .social-icons img:hover {
   transform: scale(1.2);
 }
+
 .services {
   padding: 50px 20px;
   background-color: #121212;
@@ -320,4 +322,107 @@ header nav a:hover {
   line-height: 1.4;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 250px;
+    margin: 20px auto;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image img {
+    width: 80%;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .about-details {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .skill {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header nav a {
+    margin: 5px 10px;
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .content h3 {
+    font-size: 18px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .services h2 {
+    font-size: 28px;
+  }
+
+  .services p {
+    font-size: 16px;
+  }
+
+  .service h3 {
+    font-size: 20px;
+  }
+}
